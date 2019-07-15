@@ -1,6 +1,6 @@
 body {
   /* background-color: #010101; /* #3a4660; */ */
-  background-image: url(bg.jpg);
+  background-image: url("bg.jpg");
   margin-top: 100px;
   margin-left: 10%;
   margin-right: 10%;
