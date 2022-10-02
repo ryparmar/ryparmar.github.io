@@ -25,6 +25,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 Simple personal pages.
 
-[CTU in Prague, Computer Science](https://fel.cvut.cz/en/education/bk/pruchody/pr713261071605.html) graduate with specialization in data science and machine learning. 
+[CTU in Prague, Computer Science](https://oi.fel.cvut.cz/en/master-program) graduate with specialization in machine learning and data science. 
 
 Interested in machine learning, data, buzzwording and lately NLP and linguistics.
