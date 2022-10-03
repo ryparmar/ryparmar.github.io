@@ -46,6 +46,8 @@ So, obviously, those are not equivalent and should be reweighted.
 Code is provided [here](https://github.com/ryparmar/fb-related-pages).
 
 
+## Visualization of data sample using Bokeh library
+
 <iframe
   src="/assets/visualizations/interactive_graph_labeled.html"
   style="width:107%; height:825px;"
