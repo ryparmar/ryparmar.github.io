@@ -27,4 +27,4 @@ Simple personal pages.
 
 [CTU in Prague, Computer Science](https://oi.fel.cvut.cz/en/master-program) graduate with specialization in machine learning and data science. 
 
-Interested in machine learning, data, buzzwording and lately NLP and linguistics.
+Interested in machine learning, data, NLP and lately Graph Neural Networks.

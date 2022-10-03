@@ -7,18 +7,49 @@ importance: 3
 category: fun
 ---
 
-This project deals with scraping data about Facebook pages with different attitude towards climate change, i.e., pages questioning
-existence of climate change (negative attitude) and pages that don't (positive attitude). The scraped data were filtered and 
-then manually annotated based on several posts. 
+This project is concerned with extracting data from Facebook pages and mining their divergent attitudes towards climate 
+change. 
+The project is part of my girlfriend's thesis, where I helped with scraping the data and then processing it.
+As the code was not expected to be reused, not much care was given to its cleanliness and readability (tbh, it is ugly). 😥
+The thesis is available [here](https://dspace.cuni.cz/handle/20.500.11956/148143?locale-attribute=en), unfortunately 
+only in Czech.
+The English abstract is available 
+[here](https://dspace.cuni.cz/bitstream/handle/20.500.11956/148143/120399369.pdf?sequence=3&isAllowed=y).
+In short, the thesis tries to indirectly analyze Facebook's page recommendation algorithm and its effect on the creation 
+of information bubbles in relation to the climate crisis.
+
+
+## Summary of steps
+
+1. For each initially selected site (there were 20 in total), all recommended pages were scraped
+2. Step 1. was repeated also for the scraped pages, i.e., two rounds of scraping was done
+3. Pages that was not relevant to climate change were removed. We used a custom tf-idf-like score and hand-picked threshold
+4. Rest of the climate change-related pages were manually annotated, i.e., their attitude towards climate change
+5. A simple analysis of these annotated pages and their relationships was performed to see if FB's recommendation algorithm helps with breaking information bubbles
+
+
+## Result
+
+It's not that bad. FB is trying to recommend non-climate change denial pages a little more often.
+
+
+## Future work
+
+There is a plenty of space for improvement. 
+Some simplifying assumptions were used in this project, for example, each of the recommended pages is considered to be equivalent.
+However, to get to the last recommended page, the user has to click through. 
+So, obviously, those are not equivalent and should be reweighted.
+
+
+## Code
+
+Code is provided [here](https://github.com/ryparmar/fb-related-pages).
 
 
 <iframe
   src="/assets/visualizations/interactive_graph_labeled.html"
   style="width:107%; height:825px;"
 ></iframe>
-
-
-Code is provided [here](https://github.com/ryparmar/fb-related-pages).
 
 <!-- Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
